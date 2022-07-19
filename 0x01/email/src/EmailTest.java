@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class PessoaTest {
+public class EmailTest {
 
     @Test
     public void  testar_email_com_arroba(){
