@@ -1,7 +1,6 @@
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
 public class PersonTest {
 
@@ -9,29 +8,26 @@ public class PersonTest {
 
     @BeforeEach
     public void setup() {
-        person.setName("Paul");
-        person.setSurname("McCartney");
         person.setBirthDate(1947);
+
     }
 
     @Test
-    public void show_full_name() {
+    void show_full_name() {
         person.setName("Paul");
         person.setSurname("McCartney");
         assertEquals("Paul McCartney", person.fullName());
     }
 
     @Test
-    public void test_calculateYearlySalary() {
-        Person person1 = new Person();
-        person1.setSalary(1200f);
-        assertEquals(14400.0, person1.calculateYearlySalary());
-
+    void test_calculateYearlySalary() {
+        person.setSalary(1200f);
+        assertEquals(14400.0, person.calculateYearlySalary());
 
     }
 
     @Test
-    public void person_is_MEI(){
+    void person_is_MEI(){
         person.setAnotherCompanyOwner(false);
         person.setPensioner(false);
         person.setPublicServer(false);
@@ -39,7 +35,7 @@ public class PersonTest {
         assertTrue(person.isMEI());
     }
     @Test
-    public void person_is_not_MEI(){
+    void person_is_not_MEI(){
 
         person.setAnotherCompanyOwner(true);
         person.setPensioner(true);
