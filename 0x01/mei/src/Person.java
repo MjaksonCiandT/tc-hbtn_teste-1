@@ -42,7 +42,6 @@ public class Person {
         return false;
     }
 
-
     public float getSalary() {
         return salary;
     }
