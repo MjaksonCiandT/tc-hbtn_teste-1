@@ -9,7 +9,6 @@ public class PersonTest {
     @BeforeEach
     public void setup() {
         person.setBirthDate(1947);
-
     }
 
     @Test
@@ -23,7 +22,6 @@ public class PersonTest {
     void test_calculateYearlySalary() {
         person.setSalary(1200f);
         assertEquals(14400.0, person.calculateYearlySalary());
-
     }
 
     @Test
