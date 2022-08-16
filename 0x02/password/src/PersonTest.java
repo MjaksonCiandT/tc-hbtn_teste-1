@@ -10,12 +10,9 @@ public class PersonTest {
 
     Person person ;
 
-
-
     @BeforeAll
     public static void setup() {
          Person person = new Person();
-
     }
 
     @ParameterizedTest
@@ -53,6 +50,4 @@ public class PersonTest {
     public void check_password_valid(String password){
         person.checkPassword(password);
     }
-
-
 }
