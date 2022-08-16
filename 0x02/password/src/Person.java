@@ -1,6 +1,5 @@
 public class Person {
 
-
     public static boolean checkUser(String usuario){
         boolean contains = !usuario.contains("(?=.*[@#$%^&+=])");
         if (usuario.length() >= 8 && contains){
@@ -15,7 +14,4 @@ public class Person {
         }
         return false;
     }
-
-
-
 }
