@@ -2,7 +2,6 @@ public class OperacaoBasicaTeste {
 
     static double resultado = OperacaoBasica.somar(5, 3);
 
-
     public static boolean testar_soma() {
         if (resultado == 8) {
             return true ;
@@ -32,7 +31,4 @@ public class OperacaoBasicaTeste {
         }
         return false ;
     }
-
-
-
 }
