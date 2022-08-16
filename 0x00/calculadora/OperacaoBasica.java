@@ -15,6 +15,4 @@ public class OperacaoBasica {
     public static double dividir(double a, double b){
         return a/b ;
     }
-
-
 }
